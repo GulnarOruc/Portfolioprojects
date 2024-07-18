@@ -55,8 +55,8 @@ from country_devolopment;
 
 
 UPDATE country_devolopment
-SET COUNTRY = REPLACE(COUNTRY, ' ', '') -- Replace with the exact characters found
-WHERE COUNTRY LIKE '�%';
+SET COUNTRY = REPLACE(COUNTRY, 'Â ', '') -- Replace with the exact characters found
+WHERE COUNTRY LIKE 'Â%';
 
 -- Look at the first few rows
 SELECT * FROM country_devolopment FETCH FIRST 5 ROWS ONLY;
